@@ -1,166 +1,104 @@
 @charset "utf-8";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: block;
-    font-family: 'Unbounded', cursive;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: #131516;
+  display: block;
+  font-family: "Unbounded", cursive;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #131516;
 }
 
 header {
-    width: 100%;
-    top: 30px;
-    left: 0;
-    z-index: 100;
-    position: fixed;
-    color: white;
-    display: block;
-}
-
-.gutter {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-}
-
-#full {
-    width: 100%;
-}
-
-#outer {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#headerTitle {
-    font-size: 48px;
-    margin: 0;
-}
-
-#headerPara {
-    margin-top: 0;
-    color: #ccc
-}
-
-ul#navMain li {
-    display: inline;
-    margin: 0.5em;
+  width: 100%;
+  top: 25px;
+  z-index: 100;
+  position: fixed;
+  color: white;
+  display: block;
 }
 
 .navP {
-    text-decoration: none;
-    color: #ccc;
-    padding: 0.5em;
-    transition: 300ms;
-    border-radius: 20px;
+  text-decoration: none;
+  padding: 0.5em;
+  transition: 300ms;
+  border-radius: 20px;
 }
 
 .navP:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
 }
 
 #hero {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    background-image: url("./resources/image.jpeg");
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: dog 2s ease-in-out 0.5s forwards;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: url("./resources/image.jpeg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: dog 2s ease-in-out 0.5s forwards;
 }
 
 @keyframes dog {
-    from {
-        background-position: fixed;
-    }
+  from {
+    background-position: fixed;
+  }
 
-    to {
-        background-position: center;
-    }
+  to {
+    background-position: center;
+  }
 }
 
 #heroP {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-size: xx-large;
-}
-
-main {
-    clear: both;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: xx-large;
 }
 
 article {
-    margin: 10%;
-    text-align: center;
-}
-
-#about {
-    display: flex;
-    color: #bbb
-}
-
-.section {
-    width: 50%;
-}
-
-#hey {
-    text-align: initial;
+  padding: 10%;
+  text-align: center;
 }
 
 ul {
-    text-align: initial;
-    list-style-type: none;
+  text-align: initial;
+  list-style-type: none;
 }
 
 .code {
-    border-left: 4px solid white;
-    background-color: #222;
-    padding-left: 10px;
-    margin-top: 4px;
+  border-left: 4px solid white;
+  background-color: #222;
+  padding-left: 10px;
+  margin-top: 4px;
 }
 
 #contact {
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    padding-top: 10%;
-    background-color: #bbb;
-    font-size: large;
-    color: black;
-    text-align: center;
-}
-
-#contact ul {
-    text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 70vh;
+  padding-top: 10%;
+  text-align: center;
 }
 
 .contactLink {
-    color: black;
-    transition: 300ms;
+  padding: 5px;
+  color: var(--bs-white);
+  transition: 300ms;
 }
 
 .contactLink:hover {
-    color: lightskyblue;
+  color: lightskyblue;
 }
 
 footer {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
